@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0rem;
+  margin: 0rem;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.press-start-font {
+  font-family: "Press Start 2P", cursive;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0rem;
+}
+
+.title {
+  text-align: center;
+  margin: 0rem;
+  line-height: 3rem;
+}
+
+.border-style-none {
+  border-style: none;
+}
+
+.border-all {
+  border-radius: 1rem;
+}
+
+.tic-tac-toe-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-items: center;
+  place-content: start;
+  gap: 1rem;
+  width: 100%;
+  min-width: 360px;
+}
+
+.tic-tac-toe-input {
+  background-color: #e4e4e4;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100px;
+  font-size: 3.75rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: 0px;
+  text-transform: uppercase;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+.tic-tac-toe-input:hover {
+  cursor: pointer;
+  outline-offset: 0.25rem;
+  outline-style: solid;
+  outline-color: yellow;
+  outline-width: 4px;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    padding: 2rem;
+  }
+
+  .tic-tac-toe-container {
+    grid-template-columns: repeat(3, 150px);
+  }
+
+  .tic-tac-toe-input {
+    height: 150px;
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .tic-tac-toe-container {
+    place-content: center;
+  }
+}
