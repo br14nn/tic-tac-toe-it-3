@@ -45,13 +45,13 @@ const patternChecker = (player, winMessage) => {
 
       winCondition = [];
 
-      alert(winMessage);
+      alert(`${winMessage}. The site will reload in 2 seconds.`);
 
       winner = true;
 
       setTimeout(() => {
         window.location.reload();
-      }, 1500);
+      }, 2000);
 
       return;
     } else {
@@ -70,11 +70,11 @@ const winnerChecker = () => {
   }
 
   if (!winner && playerX.length === 5 && playerO.length === 4) {
-    alert("draw");
+    alert("Draw. The site will reload in 2 seconds.");
 
     setTimeout(() => {
       window.location.reload();
-    }, 3000);
+    }, 2000);
   }
 };
 
